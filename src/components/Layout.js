@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 // IMPORT LINK
+import { NavLink } from 'react-router-dom';
+
 
 export default class BaseLayout extends Component {
   render(){
@@ -44,12 +46,15 @@ export default class BaseLayout extends Component {
                   </NavLink>
                 </li>
                 <li>
-                    {/*LINK TO CONTACT PAGE*/}
+                  {/*LINK TO CONTACT PAGE*/}
+                  <NavLink  activeClassName="selected" to="/findus">
+                    <span>Find Us </span>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link  activeClassName="selected" to="">
+                  <NavLink activeClassName="selected" to="">
                     <i className="fa fa-facebook" aria-hidden="true"></i>
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
